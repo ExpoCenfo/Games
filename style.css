@@ -1,0 +1,334 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sarabun", sans-serif;
+}
+
+body {
+    background-color: var(--color-claro) !important;
+}
+
+.container1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 999;
+    background-color: transparent;
+}
+
+.container1 section {
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.container1 section .content {
+    max-width: 1000px;
+    margin-top: -60px;
+}
+
+.seccionInicialJuegoCiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tituloJuegoCiencia {
+    color: black;
+    font-size: 80px;
+    text-align: center;
+    font-family: "Fredoka" !important;
+}
+
+.btnInicioJuegoCiencia {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFC45F;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 29px;
+    border:none;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Fredoka" !important;
+}
+
+.imgJuegoCienciaInicio {
+    height:450px;
+    width: 450px;
+    margin-left: -30px;
+}
+
+.secccion2JuegoCiencia {
+    background-color: #110c26;
+    border-radius: 82px;
+}
+
+.secccion2JuegoCienciaTexto{
+    font-size: 30px;
+    text-align:center;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.secccion2JuegoCienciaTexto b{
+    color: #DE644C;
+    font-weight: 700;
+}
+
+.secccion2JuegoCienciaAbajo {
+    display: flex !important;
+    align-items: center;
+}
+
+.secccion2JuegoCienciaCuadro {
+    display: flex !important;
+    align-items: center;
+}
+
+.secccion2JuegoCienciaCuadro p{
+    color: white;
+    font-size: 22px;
+    padding: 40px;
+}
+
+.juegoCiencia_Piramide {
+    height: 350px;
+    width: 350px;
+    padding: 10px;
+    margin-left: -30px;
+}
+
+.secccion2JuegoCienciaBoton{
+    margin-left: 40px;
+    height: 150px;
+    width: 150px;
+}
+
+.seccion3JuegoCiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perritoJuegoCiencia_Mar img {
+    height: 400px;
+    width: auto;
+    margin-top: -150px;
+}
+
+.seccion3JuegoCienciaTexto{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.seccion3JuegoCienciaSeccionOndas{
+    margin-top: 20px !important;
+    display: flex !important;
+    align-items: center;
+}
+
+.seccion3JuegoCienciaSeccionOndas p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.juegoCiencia_ondas img{
+    width: 400px;
+    height: auto;
+}
+
+.secccion3JuegoCienciaBoton {
+    height: 100px;
+    width: 100px;
+}
+
+.seccion4JuegoCiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion4JuegoCiencia p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.juegoCiencia_ondaRango img{
+    height: auto;
+    width: 600px;
+    margin: 20px 0px;
+}
+
+.seccion4JuegoCienciaTexto{
+    font-size: 30px;
+}
+
+.secccion4JuegoCienciaBoton {
+    height: 100px;
+    width: 100px;
+}
+
+.cajaTextoYBotones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: 10px auto;
+    box-shadow: 4px 4px 25px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 13px;
+    padding: 13px;
+}
+
+.cajaTextoYBotones h1{
+    font-size: 70px;
+    font-weight:500;
+}
+
+.cajaBotones {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.btn-color {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border-radius: 23px !important;
+    margin: 1px; /* Espaciado entre los botones */
+    border: none; /* Quita el borde por defecto */
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Colores del arcoíris */
+.btn-color.rojo {
+    background-color: #FF6C6C;
+}
+
+.btn-color.naranja {
+    background-color: #FFAA6C;
+}
+
+.btn-color.amarillo {
+    background-color: #FFE76C;
+}
+
+.btn-color.verde {
+    background-color: #80DD84;
+}
+
+.btn-color.azul {
+    background-color: #6C8CFF;
+}
+
+.btn-color.celeste {
+    background-color: #6CD3FF;
+}
+
+.btn-color.violeta {
+    background-color: #C76CFF;
+}
+
+/* Estado cuando el botón está seleccionado */
+.btn-check:checked + .btn-color {
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3); /* Borde oscuro */
+    background-color: inherit; /* Mantiene el color original */
+}
+
+.btn-check:checked + .btn-color.rojo {
+    box-shadow: 0 0 0 4px #FF6C6C;
+    border: none;
+}
+
+.btn-check:checked + .btn-color.naranja {
+    box-shadow: 0 0 0 4px #FFAA6C;
+    border: none;
+}
+
+.btn-check:checked + .btn-color.amarillo {
+    box-shadow: 0 0 0 4px #FFE76C;
+    border: none;
+}
+
+.btn-check:checked + .btn-color.verde {
+    box-shadow: 0 0 0 4px #80DD84;
+    border: none;
+}
+
+.btn-check:checked + .btn-color.azul {
+    box-shadow: 0 0 0 4px #6C8CFF;
+    border: none;
+}
+
+.btn-check:checked + .btn-color.celeste {
+    box-shadow: 0 0 0 4px #6CD3FF;
+    border: none;
+}
+
+.btn-check:checked + .btn-color.violeta {
+    box-shadow: 0 0 0 4px #C76CFF;
+    border: none;
+}
+
+.btnContinuarJuegoListo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.btnContinuarJuegoListo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFC45F;
+    color: white;
+    text-align: center;
+    border:none;
+    text-decoration: none;
+    border-radius: 29px;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Fredoka" !important;
+}
+
+.seccionFinalJuegoCiencia {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccionFinalJuegoCiencia h1{
+    font-size: 110px;
+    font-weight: 500;
+    font-family: "Fredoka" !important;
+    color: #F0B705;
+}
+
+.seccionFinalJuegoCiencia p{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.perritoJuegoCiencia_Final img {
+    height: 450px;
+    width: auto;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
