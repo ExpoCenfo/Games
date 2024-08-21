@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const top = targetSection.getBoundingClientRect().top + window.pageYOffset;
         if (targetSection) {
             window.scrollTo({
-                top: top + 200,
+                top: top + 160,
                 behavior: 'smooth'
             });
             console.log('Desplazamiento a seccion2 realizado');
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const top = targetSection.getBoundingClientRect().top + window.pageYOffset;
         if (targetSection) {
             window.scrollTo({
-                top: top +200,
+                top: top +160,
                 behavior: 'smooth'
             });
             console.log('Desplazamiento a seccion3 realizado');
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const top = targetSection.getBoundingClientRect().top + window.pageYOffset;
         if (targetSection) {
             window.scrollTo({
-                top: top + 180,
+                top: top + 140,
                 behavior: 'smooth'
             });
             console.log('Desplazamiento a seccion4 realizado');
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const top = targetSection.getBoundingClientRect().top + window.pageYOffset;
         if (targetSection) {
             window.scrollTo({
-                top: top+280,
+                top: top+240,
                 behavior: 'smooth'
             });
             console.log('Desplazamiento a seccion5 realizado');
