@@ -33,7 +33,7 @@ function assignRandomNumbers() {
         const randomNumber = generateRandomNumber();
         h1.textContent = randomNumber;
         h1.style.color = 'black';
-        console.log(`Asignado número ${randomNumber} a <h1>`);
+        console.log(`Asignado nÃºmero ${randomNumber} a <h1>`);
     });
 }
 
@@ -43,7 +43,7 @@ function checkSelection() {
 
     h1Elements.forEach((h1, index) => {
         const selectedOption = document.querySelector(`input[name="options${index + 1}"]:checked`);
-        console.log(`Verificando <h1> con texto ${h1.textContent} y opción seleccionada ${selectedOption ? selectedOption.id : 'Ninguna'}`);
+        console.log(`Verificando <h1> con texto ${h1.textContent} y opciÃ³n seleccionada ${selectedOption ? selectedOption.id : 'Ninguna'}`);
 
         if (selectedOption) {
             const number = parseInt(h1.textContent);
@@ -57,11 +57,11 @@ function checkSelection() {
 
                 if (number >= min && number <= max) {
                     h1.style.color = 'black';
-                    console.log('Número correcto para el color');
+                    console.log('NÃºmero correcto para el color');
                 } else {
                     h1.style.color = 'red';
                     allCorrect = false;
-                    console.log('Número incorrecto para el color');
+                    console.log('NÃºmero incorrecto para el color');
                 }
             } else {
                 h1.style.color = 'red';
@@ -71,15 +71,15 @@ function checkSelection() {
         } else {
             h1.style.color = 'red';
             allCorrect = false;
-            console.log('Ninguna opción seleccionada');
+            console.log('Ninguna opciÃ³n seleccionada');
         }
     });
 
     if (allCorrect) {
-        console.log('Botón clickeado');
+        console.log('BotÃ³n clickeado');
         const targetSection = document.getElementById('seccion6');
         const top = targetSection.getBoundingClientRect().top + window.pageYOffset;
-        const additionalOffset = -500; // Ajusta este valor según necesites
+        const additionalOffset = -500; // Ajusta este valor segÃºn necesites
         const adjustedTop = top - additionalOffset;
         if (targetSection) {
             window.scrollTo({
@@ -88,7 +88,7 @@ function checkSelection() {
             });
             console.log('Desplazamiento a seccion6 realizado');
         } else {
-            console.log('No se encontró la sección con id="seccion6"');
+            console.log('No se encontrÃ³ la secciÃ³n con id="seccion6"');
         }
     } else {
         console.log('Algunas selecciones son incorrectas');
@@ -101,17 +101,17 @@ document.getElementById('btnContinuarJuegoListo').addEventListener('click', chec
 
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.btnInicioJuegoCiencia').addEventListener('click', function (e) {
-        console.log('Botón clickeado');
+        console.log('BotÃ³n clickeado');
         const targetSection = document.getElementById('seccion2');
         const top = targetSection.getBoundingClientRect().top + window.pageYOffset;
         if (targetSection) {
             window.scrollTo({
-                top: top,
+                top: top + 200,
                 behavior: 'smooth'
             });
             console.log('Desplazamiento a seccion2 realizado');
         } else {
-            console.log('No se encontró la sección con id="seccion2"');
+            console.log('No se encontrÃ³ la secciÃ³n con id="seccion2"');
         }
     });
 });
@@ -119,53 +119,53 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.secccion2JuegoCienciaBoton').addEventListener('click', function (e) {
-        console.log('Botón clickeado');
+        console.log('BotÃ³n clickeado');
         const targetSection = document.getElementById('seccion3');
         const top = targetSection.getBoundingClientRect().top + window.pageYOffset;
         if (targetSection) {
             window.scrollTo({
-                top: top,
+                top: top +200,
                 behavior: 'smooth'
             });
             console.log('Desplazamiento a seccion3 realizado');
         } else {
-            console.log('No se encontró la sección con id="seccion3"');
+            console.log('No se encontrÃ³ la secciÃ³n con id="seccion3"');
         }
     });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.secccion3JuegoCienciaBoton').addEventListener('click', function (e) {
-        console.log('Botón clickeado');
+        console.log('BotÃ³n clickeado');
         const targetSection = document.getElementById('seccion4');
         const top = targetSection.getBoundingClientRect().top + window.pageYOffset;
         if (targetSection) {
             window.scrollTo({
-                top: top - 50,
+                top: top + 180,
                 behavior: 'smooth'
             });
             console.log('Desplazamiento a seccion4 realizado');
         } else {
-            console.log('No se encontró la sección con id="seccion4"');
+            console.log('No se encontrÃ³ la secciÃ³n con id="seccion4"');
         }
     });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.secccion4JuegoCienciaBoton').addEventListener('click', function (e) {
-        console.log('Botón clickeado');
+        console.log('BotÃ³n clickeado');
         disableScroll();
         const targetSection = document.getElementById('seccion5');
         const top = targetSection.getBoundingClientRect().top + window.pageYOffset;
         if (targetSection) {
             window.scrollTo({
-                top: top+80,
+                top: top+280,
                 behavior: 'smooth'
             });
             console.log('Desplazamiento a seccion5 realizado');
             setTimeout(enableScroll, 1000); 
         } else {
-            console.log('No se encontró la sección con id="seccion5"');
+            console.log('No se encontrÃ³ la secciÃ³n con id="seccion5"');
         }
     });
 });
@@ -176,13 +176,13 @@ function disableScroll() {
     window.addEventListener('scroll', preventScroll, { passive: false });
 }
 
-// Función para activar el scroll
+// FunciÃ³n para activar el scroll
 function enableScroll() {
     document.body.classList.remove('no-scroll');
     window.removeEventListener('scroll', preventScroll, { passive: false });
 }
 
-// Función para prevenir el scroll (nada hará que se desplace)
+// FunciÃ³n para prevenir el scroll (nada harÃ¡ que se desplace)
 function preventScroll(e) {
     e.preventDefault();
     e.stopPropagation();
